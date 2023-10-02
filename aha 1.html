@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//1. Napisz skrypt, który pobierze od użytkownika imię i wyświetli na ekranie: Witaj <tutaj pobrane imię>!
+    
+    var imie;
+
+   imie = prompt ("jak masz na imie??"); 
+
+
+   document.write ("czesc" + imie);
+   
+   
+
+
+</script>
+<script>
+   //2. Napisz skrypt prostego kalkulatora, użytkownik podaje dwie liczby oraz z menu wybiera działanie. Wyświetl wynik wybranego działania na ekranie. Menu: 1 - dodawanie, 2 - odejmowanie, 3 - mnożenie, 4 - dzielenie
+var a;
+var b;
+var numerDzialania;
+
+a = prompt ("podaj liczbe a");
+b = prompt ("podaj liczbe b");
+
+numerDzialania = prompt ("wybierz opcje z menu" , "1 dodawanie" , "2 odejmowanie" , "3 mnozenie" , "4 dzielenie");
+
+const kalkulator = (numerDzialania) =>{
+if (liczba ==1 )
+{
+    document.write (parseInt (a) + parseInt (b));
+}
+else if (liczba == 2 )
+{
+    document.write (a-b);
+}
+else if (liczba == 3 )
+{
+    document.write (a*b);
+}
+else if (liczba == 4 )
+{
+    document.write (parseInt (a) / parseInt (b));
+}
+else{
+    alert ("nie ma takiej mozliwosci");
+}
+
+}
+kalkulator (numerDzialania);
+
+
+
+
+
+
+</script>
+
+<script>
+//3. Napisz skrypt, który pobierze wzrost w cm od użytkownika i wyświetli informację czy jest wysoki, średni, niski. Wysoki > 180, średni > 165 i < 180, niski <165.
+var wzrost;
+wzrost = prompt ("podaj ile masz wzrostu w cm");
+
+
+if (wzrost >= 180)
+{
+document.write ("Wysoki")
+}
+else if (wzrost >= 165 )
+{
+  document.write ("Sredni")
+}
+else if (wzrost < 165)
+{
+ document.write ("Niski")
+}
+
+</script>
+<script>
+//4. Napisz skrypt, który pobierze od użytkownika rok urodzenia i wyświetli na ekranie jego wiek.
+
+var rok;
+
+rok = prompt ("podaj rok urodzenia")
+
+document.write (2023 - rok);
+
+</script>
+<script>
+//5. Napisz skrypt, który pobierze rok urodzenia od użytkownika i wyświetli informację czy użytkownik jest pełnoletni lub nie.
+var rokUrodzenia;
+var wiek;
+rokUrodzenia = prompt ("Podaj swoj rok urodzenia");
+wiek = 2023 - rokUrodzenia;
+if (wiek >= 18)
+{
+  document.write ("jestes pelnoletni");
+}
+else if (wiek <18 )
+{
+    document.write ("nie jestes pelnoletni");
+}
+
+</script>
+<script>
+    //6. Napisz skrypt, przeliczający temperaturę z C na F i z F na C. Użytkownik najpier wybiera na jakie stopnie chce zamienić i później podaje temperaturę do zamiany. Stopnie Fahrenheita zamienisz na stopnie Celsjusza używając wzoru: (°F - 32) x 5/9 = °C. Stopnie Celsjusza zamienisz na stopnie Fahrenheita używając wzoru: (°C x 9/5) + 32 = °F
+    var wybor = parseInt(prompt("Wybierz konwersję:\n 1 - Celsjusz do Fanhrenheit, 2 - Fanherenheit do Celsjusz"));
+        var temperatura = parseFloat(prompt("Podaj temperaturę:"));
+       var wynikk;
+        if(wybor === 1){
+            wynikk = (temperatura * 9/5) + 32;
+            alert('Temperatura w Fahrenheitach:' + wynik + 'stopni F');
+        }
+        else if(wybor === 2){
+            wynikk = (temperatura - 32) * 5/9;
+            alert('Temperatura w stopniach Celsjusza: ' + wynik + 'stopni Celsjusza');
+        }
+        else{
+            alert("Nieprawidłowy wybór.");
+        }
+</script>
+
+
+
+</body>
+</html>
