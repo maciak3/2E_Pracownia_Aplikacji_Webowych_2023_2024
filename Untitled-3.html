@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+ const wynikWPunktach = prompt ("Podaj liczbe pkt");
+ const maxPunktow = prompt ("Podaj maksymalna liczbe pkt");
+ var punkty = "";
+ let procentowyWynik = (punkty / maxPunktow) * 100;
+ var ocena = "";
+ if (procentowyWynik < 30) {
+    ocena = "niedostateczny";
+ } else if ( procentowyWynik >= 30 && procentowyWynik < 49) {
+    ocena = "dopusczajacy";   
+ } else if (procentowyWynik >= 50 && procentowyWynik < 74 ) {
+ ocena = "dostateczny";
+ } else if (procentowyWynik >= 75 && procentowyWynik < 89) {
+ ocena = "dobry";
+ } else if (procentowyWynik >= 90 && procentowyWynik < 99) {
+    ocena = "bardzo dobry";
+ } else if (procentowyWynik === 100) {
+    ocena = "celujacy";
+ } else {
+    ocena = "nie ma takiej oceny";
+ }
+alert ("Twoj wynik to" + procentowyWynik + "%" +  ocena);
+
+  </script>
+</body>
+</html>
