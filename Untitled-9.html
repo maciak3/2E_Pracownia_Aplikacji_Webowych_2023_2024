@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przycisk Test</title>
+</head>
+<body>
+ 
+<button id="testButton">Test</button>
+ 
+<script>
+    var button = document.getElementById("testButton");
+ 
+    button.addEventListener("mouseenter", function() {
+        alert("Najechałeś kursorem na przycisk.");
+    });
+ 
+    button.addEventListener("mouseleave", function() {
+        alert("Kursor opuścił obszar przycisku.");
+    });
+</script>
+ 
+</body>
+</html>
